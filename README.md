@@ -10,22 +10,42 @@ structure of employee-manager relationships.
 
 ## <a name="features">🔋 **API's**</a>
 
-- **Add Employee**
+- **Add Employee.**
 
 - **List of root employees.**
 
 - **API to get a specific employee's details, including their manager.**
 
-- **API to update employee details**
+- **API to update employee details.**
 
 - **API to remove an employee.**
 
 - **API to retrieve all direct and indirect subordinates of a manager.**
 
-- **API to retrieve all employees under him directly**
+- **API to retrieve all employees under him directly.**
 
-- **API to retrieve all ancestor root untill root**
+- **API to retrieve all ancestor root untill root.**
 
+
+## <a name="features">🔋 **Backend Architecture**</a>
+
+- **Monolithic Architecture.**
+
+- **Inside Backednd Folder there is an src folder.**
+
+- **There are six folders inside the src folder.**
+
+- **Routes : Maps routes to appropriate controller functions.**
+
+- **Controllers : Handles API requests and interacts with services.**
+
+- **Models : Defines the structure for database collections.**
+
+- **Services : Interacts with models for data manipulation.**
+
+- **Validations : Validates user input before processing.**
+
+- **Config : Initializes database connections at application startup.**
 
 
 ## <a name="quick-start">🤸 Quick Start</a>
