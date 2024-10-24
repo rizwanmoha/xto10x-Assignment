@@ -1,4 +1,3 @@
-const bodyParser = require("body-parser");
 const dotenv = require('dotenv');
 const express = require('express');
 const cors  = require('cors');
@@ -11,6 +10,8 @@ dotenv.config();
 
 
 const app = express();
+
+// connnecting the database
 connectDb();
 
 
@@ -18,12 +19,14 @@ app.use(express.json());
 
 app.use(cors());
 
-app.use('/api/v1', employeeRoutes);
+// calling all the routes
+
+app.use('/api/v1/employee', employeeRoutes);
 
 
 
 
-let PORT = process.env.PORT;
+let PORT = process.env.PORT || 800;
 
 app.listen(PORT, (req, res) => {
     console.log(`server is listening on PORT number ${PORT}`);

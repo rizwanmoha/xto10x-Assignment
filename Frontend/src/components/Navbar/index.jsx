@@ -19,13 +19,16 @@ const Nav = () => {
             Flowbite React
           </span>
         </Navbar.Brand>
-        <button className="flex flex-row shadow-md px-4 py-1 rounded-md border-[2px]" onClick={() => setAddEmployeeVisible(true)}>
+        <button
+          className="flex flex-row shadow-md px-4 py-1 rounded-md border-[2px]"
+          onClick={() => setAddEmployeeVisible(true)}
+        >
           Add
         </button>
       </Navbar>
-      <AddEmployeeModal 
-        visible={addEmployeeVisible} 
-        setVisible={setAddEmployeeVisible}  
+      <AddEmployeeModal
+        visible={addEmployeeVisible}
+        setVisible={setAddEmployeeVisible}
       />
     </React.Fragment>
   );

@@ -1,5 +1,7 @@
 const Joi = require('joi');
 
+
+// checks the payload wheather it is in valid form or not
 const employeeValidationSchema = Joi.object({
   name: Joi.string()
     .min(2)
@@ -20,11 +22,11 @@ const employeeValidationSchema = Joi.object({
       'string.email': 'Please provide a valid email address',
       'string.empty': 'Email is required'
     }),
-    managerName: Joi.string()
+    managerEmail: Joi.string()
     .allow(null, '')
     .trim()
     .messages({
-      'string.empty': 'Manager name can be empty'
+      'string.empty': 'Manager Email can be empty'
     }),
 
     dateOfJoining: Joi.date()

@@ -1,15 +1,39 @@
-const express = require('express');
-const {addEmployee, EmployeeList , getSpecificEmployeeDetails , allEmployeesUnderManager , allDirectAndIndirectSubordinates, allAncestorManager} = require('../controllers/employeeController');
+const express = require("express");
+const {
+  addEmployee,
+  EmployeeList,
+  getSpecificEmployeeDetails,
+  allEmployeesUnderManager,
+  allDirectAndIndirectSubordinates,
+  allAncestorManager,
+  deleteEmployee,
+  updateEmployee,
+} = require("../controllers/employeeController");
 
 const router = express.Router();
+// add an employee
+router.post("/addemployee", addEmployee);
 
-router.post('/addemployee' , addEmployee);
-router.get('/listofemployee' , EmployeeList);
-router.get('/employeedetails/:empId' , getSpecificEmployeeDetails)
-router.get('/allemployeesUnderManager/:empId' , allEmployeesUnderManager)
-router.get('/employeesSubordinates/:empId' ,allDirectAndIndirectSubordinates);
-router.get('/allAncestorManager/:empId' , allAncestorManager)
+// Getting list of root employee
+router.get("/listofemployee", EmployeeList);
 
+// Getting details of particular employee
+router.get("/employeedetails/:empId", getSpecificEmployeeDetails);
 
+// All employees Under a particular manager
+router.get("/allemployeesUnderManager/:empId", allEmployeesUnderManager);
 
-module.exports = router
+// All direct and Indirect subordinates a particular manager
+router.get("/employeesSubordinates/:empId", allDirectAndIndirectSubordinates);
+
+// All ancestors Manager till root
+router.get("/allAncestorManager/:empId", allAncestorManager);
+
+// Delete an employee
+router.delete("/delete/:empId", deleteEmployee);
+
+// Update an employee
+
+router.put("/editemployee/:empId", updateEmployee);
+
+module.exports = router;
