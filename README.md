@@ -1,51 +1,36 @@
-<h1 align="center">Organisation Hierarchy management system</h1>
+<h1 align="center">Blogging Website</h1>
 
-Developed a web application that allows users to view and manage an organization's hierarchical
-structure of employee-manager relationships.
+Developed a web application that allows users to create and view Blogs.
 
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
-[![Stack Used](https://skillicons.dev/icons?i=react,html,js,tailwind,nodejs,express,npm,mongodb)](https://skillicons.dev)
+[![Stack Used](https://skillicons.dev/icons?i=next,html,ts,tailwind,nodejs,express,npm,mongodb)](https://skillicons.dev)
 
 ## <a name="features">🔋 **API's**</a>
 
-- **Add Employee.**
+- **API to Signup.**
 
-- **List of root employees.**
+- **API to Signin.**
+  
+- **API to logout.**
 
-- **API to get a specific employee's details, including their manager.**
+- **API to create a blog.**
 
-- **API to update employee details.**
+- **API to get all post.**
 
-- **API to remove an employee.**
+- **API to toggle the likes.**
 
-- **API to retrieve all direct and indirect subordinates of a manager.**
+- **API to retrieve all users.**
 
-- **API to retrieve all employees under him directly.**
 
-- **API to retrieve all ancestor root untill root.**
 
 
 ## <a name="features">🔋 **Backend Architecture**</a>
 
 - **Monolithic Architecture.**
 
-- **Inside Backednd Folder there is an src folder.**
 
-- **There are six folders inside the src folder.**
-
-- **Routes : Maps routes to appropriate controller functions.**
-
-- **Controllers : Handles API requests and interacts with services.**
-
-- **Models : Defines the structure for database collections.**
-
-- **Services : Interacts with models for data manipulation.**
-
-- **Validations : Validates user input before processing.**
-
-- **Config : Initializes database connections at application startup.**
 
 
 ## <a name="quick-start">🤸 Quick Start</a>
@@ -63,8 +48,8 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-https://github.com/rizwanmoha/xto10x-Assignment.git
-cd xto10x-Assignment
+https://github.com/lleviackermann/Blogging.git
+cd Blogging
 ```
 
 **Setting Up the Backend**
@@ -72,7 +57,7 @@ cd xto10x-Assignment
 1. Navigate to the Backend  directory
    
 ```bash
-cd Backend
+cd server
 ```
 
 
@@ -81,7 +66,7 @@ cd Backend
    
 1. Navigate to the Frontend directory
 ```
-cd Frontend
+cd client
 ```
 
 **Installation**
@@ -90,11 +75,11 @@ Install the required dependencies for both backend and frontend using npm:
 
 ```bash
 # Backend
-cd backend
+cd server
 npm install
 
 # Frontend
-cd frontend
+cd client
 npm install
 ```
 
@@ -102,13 +87,13 @@ npm install
 **Running the Project**
 1. Start the backend server:
 ```bash
-cd backend
+cd server
 npm run dev 
 ```
 2. In a new terminal, start the frontend development server:
 ```bash
-cd frontend
+cd client
 npm run dev 
 ```  
 
-Open [http://localhost:5173](http://localhost:5173) in your browser to view the project.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
