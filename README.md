@@ -54,13 +54,25 @@ cd Blogging
 
 **Setting Up the Backend**
 
+
+
 1. Navigate to the Backend  directory
    
 ```bash
 cd server
 ```
 
+2. Set up the ENV File
 
+```
+MONGO_USER=<MONGO_USER>             # Put MongoDB username here
+MONGO_PASSWORD=<MONGO_PASSWORD>     # Put MongoDB password here
+JWT_SECRET_KEY=<JWT_SECRET_KEY>     # Put JWT secret key here
+# Cloud Service Credentials (e.g., Cloudinary)
+CLOUD_NAME=<CLOUD_NAME>             # Put cloud service account name here
+API_KEY=<API_KEY>                   # Put cloud service API key here
+API_SECRET=<API_SECRET>             # Put cloud service API secret here
+```
 
 **Setting Up the Frontend**
    
